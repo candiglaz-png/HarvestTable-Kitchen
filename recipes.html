@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Catalog — HarvestTable Kitchen | 21+ Home Cooking Recipes</title>
+  <meta name="description" content="Browse our complete collection of 21+ approachable recipes across appetizers, nourishing bowls, main courses, desserts, and botanical beverages.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-announcement-bar">
+    <i class="fa-solid fa-utensils"></i> Browse the recipe collection &bull; Select a recipe for its ingredients and preparation details.
+  </div>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="index.html" class="brand-logo">
+          <i class="fa-solid fa-utensils"></i>
+          <span>HarvestTable <span class="highlight">Kitchen</span></span>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="nav-menu">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About Us</a>
+          <a href="recipes.html" class="nav-link active">Recipes</a>
+          <a href="testimonials.html" class="nav-link">Testimonials</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+
+        <!-- Header Actions -->
+        <div class="nav-actions">
+          <a href="recipes.html" class="favorites-btn" aria-label="Favorite Recipes">
+            <i class="fa-solid fa-heart"></i>
+            <span class="favorites-badge">0</span>
+          </a>
+          <a href="contact.html" class="btn btn-amber btn-sm">Recipe Questions</a>
+          <button class="hamburger-btn" aria-label="Open Navigation Menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Navigation -->
+  <div class="mobile-nav-overlay"></div>
+  <aside class="mobile-nav-drawer">
+    <div class="mobile-nav-header">
+      <div class="brand-logo" style="font-size: 1.5rem;">
+        <i class="fa-solid fa-utensils"></i>
+        <span>HarvestTable <span class="highlight">Kitchen</span></span>
+      </div>
+      <button class="mobile-nav-close" aria-label="Close Navigation Menu">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <nav class="mobile-nav-links">
+      <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+      <a href="about.html"><i class="fa-solid fa-circle-info"></i> About Us</a>
+      <a href="recipes.html" class="active"><i class="fa-solid fa-book-open"></i> Recipe Catalog (21+)</a>
+      <a href="testimonials.html"><i class="fa-solid fa-star"></i> Home Cook Reviews</a>
+      <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact Us</a>
+      <a href="privacy-policy.html"><i class="fa-solid fa-shield-halved"></i> Privacy Policy</a>
+    </nav>
+    <div class="mobile-nav-footer">
+      <p style="font-size: 0.85rem; color: #5f6863; margin-bottom: 1rem;">
+        <i class="fa-solid fa-location-dot"></i> 450 Culinary Arts Way, San Francisco, CA
+      </p>
+      <a href="contact.html" class="btn btn-primary" style="width: 100%;">Ask A Chef</a>
+    </div>
+  </aside>
+
+  <!-- Page Banner -->
+  <section class="page-banner">
+    <div class="container">
+      <span class="section-label" style="color: var(--spice-amber);"><i class="fa-solid fa-kitchen-set"></i> Full Culinary Index</span>
+      <h1>Our Recipe Catalog</h1>
+      <p>
+        Explore 21 recipe ideas with ingredients and preparation guidance for home cooks. Filter by meal type or search by your favorite seasonal ingredient.
+      </p>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a> <i class="fa-solid fa-chevron-right" style="font-size: 0.75rem;"></i> <span>Recipes Catalog</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recipe Catalog Section -->
+  <section class="section">
+    <div class="container">
+      
+      <!-- Search & Filter Controls -->
+      <div class="recipe-search-filter-row">
+        <div class="catalog-search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="catalog-search" class="catalog-search-input" placeholder="Search recipes by title, ingredients, or dietary tag (e.g. salmon, vegan, gluten-free)...">
+        </div>
+
+        <div class="filter-pills-bar">
+          <button class="filter-pill active" data-filter="all"><i class="fa-solid fa-border-all"></i> All Recipes (21)</button>
+          <button class="filter-pill" data-filter="appetizers"><i class="fa-solid fa-bowl-food"></i> Appetizers (4)</button>
+          <button class="filter-pill" data-filter="bowls"><i class="fa-solid fa-leaf"></i> Nourishing Bowls (4)</button>
+          <button class="filter-pill" data-filter="mains"><i class="fa-solid fa-drumstick-bite"></i> Main Courses (5)</button>
+          <button class="filter-pill" data-filter="desserts"><i class="fa-solid fa-cookie-bite"></i> Desserts (4)</button>
+          <button class="filter-pill" data-filter="beverages"><i class="fa-solid fa-glass-water"></i> Beverages (4)</button>
+        </div>
+      </div>
+
+      <!-- 21 Recipes Grid -->
+      <div class="recipes-grid">
+
+        <!-- Recipe 1: Crispy Garlic Herb Roasted Chickpeas -->
+        <article class="recipe-card" data-category="appetizers">
+          <div class="recipe-img-box">
+            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=80" alt="Crispy Garlic Herb Roasted Chickpeas">
+            <button class="recipe-favorite-btn" aria-label="Save to Favorites"><i class="fa-regular fa-heart"></i></button>
+            <span class="recipe-dietary-badge">Vegan &bull; GF</span>
+          </div>
+          <div class="recipe-content">
+            <div class="recipe-meta-row">
+              <span class="recipe-time"><i class="fa-solid fa-clock"></i> 25 Mins</span>
+              <span class="recipe-difficulty">Easy</span>
+            </div>
+            <h3 class="recipe-title">Crispy Garlic Herb Chickpeas</h3>
+            <div class="recipe-rating-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <span></span>
+            </div>
+            <p class="recipe-description">
+              Tossed in extra virgin olive oil, smoked Spanish paprika, crushed garlic, and sea salt, then roasted until shatteringly crisp. An addictive, plant-based plant snack that pairs wonderfully with chilled sparkling kombucha or a sparkling water or another preferred drink.
+            </p>
+            <div class="recipe-pairing-tag">
+              <i class="fa-solid fa-wine-glass"></i> Pair with: Chilled sparkling kombucha or lemon-lime soda.
+            </div>
+            <div class="recipe-footer">
+              <button class="btn btn-primary btn-sm btn-view-recipe">View Recipe</button>
+              <span style="font-size: 0.85rem; font-weight: 700; color: var(--primary-olive);">180 kcal</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Recipe 2: Whipped Ricotta & Wildflower Honey Crostini -->
+        <article class="recipe-card" data-category="appetizers">
+          <div class="recipe-img-box">
+            <img src="https://images.unsplash.com/photo-1506280754576-f6fa8a873550?auto=format&fit=crop&w=600&q=80" alt="Whipped Ricotta and Honey Crostini">
+            <button class="recipe-favorite-btn" aria-label="Save to Favorites"><i class="fa-regular fa-heart"></i></button>
+            <span class="recipe-dietary-badge">Vegetarian</span>
+          </div>
+          <div class="recipe-content">
+            <div class="recipe-meta-row">
+              <span class="recipe-time"><i class="fa-solid fa-clock"></i> 15 Mins</span>
+              <span class="recipe-difficulty">Easy</span>
+            </div>
+            <h3 class="recipe-title">Whipped Ricotta Crostini</h3>
+            <div class="recipe-rating-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <span></span>
+            </div>
+            <p class="recipe-description">
+              Creamy whole milk ricotta whipped with lemon zest and cracked black pepper, spread generously over toasted artisan sourdough slices and finished with crushed pistachios and raw wildflower honey. Excellent paired with a sparkling water or another preferred drink.
+            </p>
+            <div class="recipe-pairing-tag">
+              <i class="fa-solid fa-wine-glass"></i> Pair with: Dry Italian Prosecco or iced sparkling tonic.
+            </div>
+            <div class="recipe-footer">
+              <button class="btn btn-primary btn-sm btn-view-recipe">View Recipe</button>
+              <span style="font-size: 0.85rem; font-weight: 700; color: var(--primary-olive);">220 kcal</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Recipe 3: Vietnamese Fresh Summer Rolls -->
+        <article class="recipe-card" data-category="appetizers">
+          <div class="recipe-img-box">
+            <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80" alt="Vietnamese Fresh Summer Rolls with Peanut Dip">
+            <button class="recipe-favorite-btn" aria-label="Save to Favorites"><i class="fa-regular fa-heart"></i></button>
+            <span class="recipe-dietary-badge">Vegan &bull; GF</span>
+          </div>
+          <div class="recipe-content">
+            <div class="recipe-meta-row">
+              <span class="recipe-time"><i class="fa-solid fa-clock"></i> 20 Mins</span>
+              <span class="recipe-difficulty">Easy</span>
+            </div>
+            <h3 class="recipe-title">Vietnamese Summer Rolls</h3>
+            <div class="recipe-rating-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+              <span></span>
+            </div>
+            <p class="recipe-description">
+              Translucent rice paper wraps brimming with crisp cucumber ribbons, shredded carrots, purple cabbage, fresh mint, and cilantro. Served alongside a velvety warm lime-tamari peanut dipping sauce and pairs elegantly with jasmine iced tea.
+            </p>
+            <div class="recipe-pairing-tag">
+              <i class="fa-solid fa-wine-glass"></i> Pair with: Chilled jasmine blossom tea or light lager.
+            </div>
+            <div class="recipe-footer">
+              <button class="btn btn-primary btn-sm btn-view-recipe">View Recipe</button>
+              <span style="font-size: 0.85rem; font-weight: 700; color: var(--primary-olive);">190 kcal</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Recipe 4: Charred Shishito Peppers -->
+        <article class="recipe-card" data-category="appetizers">
+          <div class="recipe-img-box">
+            <img src="https://images.unsplash.com/photo-1592417817098-8f3d69104a49?auto=format&fit=crop&w=600&q=80" alt="Charred Shishito Peppers in Cast Iron">
+            <button class="recipe-favorite-btn" aria-label="Save to Favorites"><i class="fa-regular fa-heart"></i></button>
+            <span class="recipe-dietary-badge">Vegan &bull; Low-Carb</span>
+          </div>
+          <div class="recipe-content">
+            <div class="recipe-meta-row">
+              <span class="recipe-time"><i class="fa-solid fa-clock"></i> 10 Mins</span>
+              <span class="recipe-difficulty">Easy</span>
+            </div>
+            <h3 class="recipe-title">Charred Shishito Peppers</h3>
+            <div class="recipe-rating-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <span></span>
+            </div>
+            <p class="recipe-description">
+              Blistered in a smoking-hot cast-iron skillet with cold-pressed sesame oil, fresh garlic cloves, and flaky Maldon sea salt. One in ten peppers packs a surprise spicy kick, making this a fun starter paired with chilled dry sake.
+            </p>
+            <div class="recipe-pairing-tag">
+              <i class="fa-solid fa-wine-glass"></i> Pair with: Chilled junmai sake or crisp sparkling water.
+            </div>
+            <div class="recipe-footer">
+              <button class="btn btn-primary btn-sm btn-view-recipe">View Recipe</button>
+              <span style="font-size: 0.85rem; font-weight: 700; color: var(--primary-olive);">110 kcal</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Recipe 5: Mediterranean Quinoa Falafel Bowl -->
+        <article class="recipe-card" data-category="bowls">
+          <div class="recipe-img-box">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80" alt="Mediterranean Quinoa Falafel Bowl">
+            <button class="recipe-favorite-btn" aria-label="Save to Favorites"><i class="fa-regular fa-heart"></i></button>
+            <span class="recipe-dietary-badge">Vegan &bull; plant-based</span>
+          </div>
+          <div class="recipe-content">
+            <div class="recipe-meta-row">
+              <span class="recipe-time"><i class="fa-solid fa-clock"></i> 30 Mins</span>
+              <span class="recipe-difficulty">Medium</span>
+            </div>
+            <h3 class="recipe-title">Mediterranean Quinoa Bowl</h3>
+            <div class="recipe-rating-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <span></span>
+            </div>
+            <p class="recipe-description">
+              Fluffy golden quinoa layered with baked herbed falafel patties, Persian cucumber ribbons, kalamata olives, heirloom cherry tomatoes, and a creamy lemon tahini drizzle. Best enjoyed with an iced herbal mint cooler or crisp Greek Assyrtiko.
+            </p>
+            <div class="recipe-pairing-tag">
+              <i class="fa-solid fa-wine-glass"></i> Pair with: Iced herbal mint cooler or Greek Assyrtiko.
+            </div>
+            <div class="recipe-footer">
+              <button class="btn btn-primary btn-sm btn-view-recipe">View Recipe</button>
+              <span style="font-size: 0.85rem; font-weight: 700; color: var(--primary-olive);">460 kcal</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Recipe 6: Crispy Salmon Poke Bowl -->
+        <article class="recipe-card" data-category="bowls">
+          <div class="recipe-img-box">
+            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=80" alt="Crispy Salmon Poke Bowl">
+            <button class="recipe-favorite-btn" aria-label="Save to Favorites"><i class="fa-regular fa-heart"></i></button>
+            <span class="recipe-dietary-badge">High-Protein</span>
+          </div>
+          <div class="recipe-content">
+            <div class="recipe-meta-row">
+              <span class="recipe-time"><i class="fa-solid fa-clock"></i> 25 Mins</span>
+              <span class="recipe-difficulty">Easy</span>
+            </div>
+            <h3 class="recipe-title">Crispy Salmon Poke Bowl</h3>
+            <div class="recipe-rating-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <span></span>
+            </div>
+            <p class="recipe-description">
+              Succulent pan-crisped wild salmon cubes tossed in a tamari-ginger glaze atop warm brown sushi rice, creamy Haas avocado slices, steamed edamame, and pickled watermelon radishes. Pairs beautifully with chilled sparkling cucumber water or dry Sauvignon Blanc.
+            </p>
+            <div class="recipe-pairing-tag">
+              <i class="fa-solid fa-wine-glass"></i> Pair with: Sparkling cucumber water or Sauvignon Blanc.
+            </div>
+            <div class="recipe-footer">
+              <button class="btn btn-primary btn-sm btn-view-recipe">View Recipe</button>
+              <span style="font-size: 0.85rem; font-weight: 700; color: var(--primary-olive);">520 kcal</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Recipe 7: Spiced Moroccan Sweet Potato Bowl -->
+        <article class="recipe-card" data-category="bowls">
+          <div class="recipe-img-box">
+            <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80" alt="Spiced Moroccan Sweet Potato Bowl">
+            <button class="recipe-favorite-btn" aria-label="Save to Favorites"><i class="fa-regular fa-heart"></i></button>
+            <span class="recipe-dietary-badge">Vegan &bull; GF</span>
+          </div>
+          <div class="recipe-content">
+            <div class="recipe-meta-row">
+              <span class="recipe-time"><i class="fa-solid fa-clock"></i> 35 Mins</span>
+              <span class="recipe-difficulty">Easy</span>
+            </div>
+            <h3 class="recipe-title">Moroccan Sweet Potato Bowl</h3>
+            <div class="recipe-rating-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <span></span>
+            </div>
+            <p class="recipe-description">
+              Caramelized sweet potato wedges and slow-simmered ras el hanout spiced chickpeas served over pearl couscous, wilted baby kale, and creamy garlic yogurt tahini. Perfect paired with a light, chilled Pinot Noir or sparkling pomegranate spritz.
+            </p>
+            <div class="recipe-pairing-tag">
+              <i class="fa-solid fa-wine-glass"></i> Pair with: Chilled Pinot Noir or sparkling pomegranate spritz.
+            </div>
+            <div class="recipe-footer">
+              <button class="btn btn-primary btn-sm btn-view-recipe">View Recipe</button>
+              <span style="font-size: 0.85rem; font-weight: 700; color: var(--primary-olive);">440 kcal</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Recipe 8: Sesame Ginger Tofu Soba Bowl -->
+        <article class="recipe-card" data-category="bowls">
+          <div class="recipe-img-box">
+            <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=600&q=80" alt="Sesame Ginger Tofu and Soba Noodle Bowl">
+            <button class="recipe-favorite-btn" aria-label="Save to Favorites"><i class="fa-regular fa-heart"></i></button>
+            <span class="recipe-dietary-badge">Plant-Based</span>
+          </div>
+          <div class="recipe-content">
+            <div class="recipe-meta-row">
+              <span class="recipe-time"><i class="fa-solid fa-clock"></i> 25 Mins</span>
+              <span class="recipe-difficulty">Easy</span>
+            </div>
+            <h3 class="recipe-title">Sesame Ginger Tofu Soba</h3>
+            <div class="recipe-rating-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+              <span></span>
+            </div>
+            <p class="recipe-description">
+              Crispy pan-seared organic tofu cubes and tender buckwheat soba noodles tossed in a zesty sesame-ginger scallion dressing with snap peas and toasted nori strips. Pairs wonderfully with chilled Japanese green tea or dry riesling.
+            </p>
+            <div class="recipe-pairing-tag">
+              <i class="fa-solid fa-wine-glass"></i> Pair with: Chilled Japanese green tea or off-dry Riesling.
+            </div>
+            <div class="recipe-footer">
+              <button class="btn btn-primary btn-sm btn-view-recipe">View Recipe</button>
+              <span style="font-size: 0.85rem; font-weight: 700; color: var(--primary-olive);">390 kcal</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Recipe 9: Pan-Seared Lemon Herb Salmon -->
+        <article class="recipe-card" data-category="mains">
+          <div class="recipe-img-box">
+            <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=600&q=80" alt="Pan-Seared Lemon Herb Salmon with Asparagus">
+            <button class="recipe-favorite-btn" aria-label="Save to Favorites"><i class="fa-regular fa-heart"></i></button>
+            <span class="recipe-dietary-badge">Keto &bull; High-Protein</span>
+          </div>
+          <div class="recipe-content">
+            <div class="recipe-meta-row">
+              <span class="recipe-time"><i class="fa-solid fa-clock"></i> 20 Mins</span>
+              <span class="recipe-difficulty">Easy</span>
+            </div>
+            <h3 class="recipe-title">Lemon Herb Wild Salmon</h3>
+            <div class="recipe-rating-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <span></span>
+            </div>
+            <p class="recipe-description">
+              Crispy-skinned wild Alaskan salmon fillets basted with grass-fed butter, fresh dill, minced garlic, and Meyer lemon juice, accompanied by tender roasted asparagus spears. Pairs exquisitely with an unoaked California Chardonnay or sparkling mineral water.
+            </p>
+            <div class="recipe-pairing-tag">
+              <i class="fa-solid fa-wine-glass"></i> Pair with: Unoaked California Chardonnay or lemon seltzer.
+            </div>
+            <div class="recipe-footer">
+              <button class="btn btn-primary btn-sm btn-view-recipe">View Recipe</button>
+              <span style="font-size: 0.85rem; font-weight: 700; color: var(--primary-olive);">490 kcal</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Recipe 10: Tuscan Sun-Dried Tomato Stuffed Chicken -->
+        <article class="recipe-card" data-category="mains">
+          <div class="recipe-img-box">
+            <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=600&q=80" alt="Tuscan Stuffed Chicken Breast">
+            <button class="recipe-favorite-btn" aria-label="Save to Favorites"><i class="fa-regular fa-heart"></i></button>
+            <span class="recipe-dietary-badge">Gluten-Free</span>
+          </div>
+          <div class="recipe-content">
+            <div class="recipe-meta-row">
+              <span class="recipe-time"><i class="fa-solid fa-clock"></i> 35 Mins</span>
+              <span class="recipe-difficulty">Medium</span>
+            </div>
+            <h3 class="recipe-title">Tuscan Stuffed Chicken</h3>
+            <div class="recipe-rating-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <span></span>
+            </div>
+            <p class="recipe-description">
+              Tender organic chicken breasts stuffed with baby spinach, sweet sun-dried tomatoes, and creamy sheep's milk feta, pan-seared and simmered in a velvety garlic-white wine reduction. Pairs with steamed broccolini and a bright Italian Pinot Grigio.
+            </p>
+            <div class="recipe-pairing-tag">
+              <i class="fa-solid fa-wine-glass"></i> Pair with: Steamed broccolini and Italian Pinot Grigio.
+            </div>
+            <div class="recipe-footer">
+              <button class="btn btn-primary btn-sm btn-view-recipe">View Recipe</button>
+              <span style="font-size: 0.85rem; font-weight: 700; color: var(--primary-olive);">480 kcal</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Recipe 11: Creamy Butternut Squash Rigatoni -->
+        <article class="recipe-card" data-category="mains">
+          <div class="recipe-img-box">
+            <img src="https://images.unsplash.com/photo-1621996346565-e3d5d628169b?auto=format&fit=crop&w=600&q=80" alt="Creamy Butternut Squash Rigatoni with Sage">
+            <button class="recipe-favorite-btn" aria-label="Save to Favorites"><i class="fa-regular fa-heart"></i></button>
+            <span class="recipe-dietary-badge">Vegetarian</span>
+          </div>
+          <div class="recipe-content">
+            <div class="recipe-meta-row">
+              <span class="recipe-time"><i class="fa-solid fa-clock"></i> 30 Mins</span>
+              <span class="recipe-difficulty">Easy</span>
+            </div>
+            <h3 class="recipe-title">Butternut Squash Rigatoni</h3>
+            <div class="recipe-rating-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+              <span></span>
+            </div>
+            <p class="recipe-description">
+              Al dente bronze-cut rigatoni tossed in a silky roasted butternut squash sauce infused with nutmeg, garlic, and freshly grated Parmigiano-Reggiano, topped with frizzled sage leaves. Pairs delightfully with a crisp Barbera or sparkling apple cider.
+            </p>
+            <div class="recipe-pairing-tag">
+              <i class="fa-solid fa-wine-glass"></i> Pair with: Crisp Italian Barbera or sparkling apple cider.
+            </div>
+            <div class="recipe-footer">
+              <button class="btn btn-primary btn-sm btn-view-recipe">View Recipe</button>
+              <span style="font-size: 0.85rem; font-weight: 700; color: var(--primary-olive);">430 kcal</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Recipe 12: Moroccan Lamb & Apricot Tagine -->
+        <article class="recipe-card" data-category="mains">
+          <div class="recipe-img-box">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80" alt="Moroccan Lamb and Apricot Tagine">
+            <button class="recipe-favorite-btn" aria-label="Save to Favorites"><i class="fa-regular fa-heart"></i></button>
+            <span class="recipe-dietary-badge">High-Protein</span>
+          </div>
+          <div class="recipe-content">
+            <div class="recipe-meta-row">
+              <span class="recipe-time"><i class="fa-solid fa-clock"></i> 50 Mins</span>
+              <span class="recipe-difficulty">Medium</span>
+            </div>
+            <h3 class="recipe-title">Moroccan Lamb Tagine</h3>
+            <div class="recipe-rating-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <span></span>
+            </div>
+            <p class="recipe-description">
+              Succulent grass-fed lamb shoulder braised with Turkish dried apricots, toasted almonds, cinnamon bark, and saffron broth until melt-in-your-mouth tender. Serve over steaming fluffy couscous alongside a full-bodied Côtes du Rhône or mint tea.
+            </p>
+            <div class="recipe-pairing-tag">
+              <i class="fa-solid fa-wine-glass"></i> Pair with: Full-bodied Côtes du Rhône or warm mint tea.
+            </div>
+            <div class="recipe-footer">
+              <button class="btn btn-primary btn-sm btn-view-recipe">View Recipe</button>
+              <span style="font-size: 0.85rem; font-weight: 700; color: var(--primary-olive);">560 kcal</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Recipe 13: Grilled Miso Glazed Eggplant -->
+        <article class="recipe-card" data-category="mains">
+          <div class="recipe-img-box">
+            <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?auto=format&fit=crop&w=600&q=80" alt="Grilled Miso Glazed Eggplant with Rice">
+            <button class="recipe-favorite-btn" aria-label="Save to Favorites"><i class="fa-regular fa-heart"></i></button>
+            <span class="recipe-dietary-badge">Vegan &bull; GF</span>
+          </div>
+          <div class="recipe-content">
+            <div class="recipe-meta-row">
+              <span class="recipe-time"><i class="fa-solid fa-clock"></i> 25 Mins</span>
+              <span class="recipe-difficulty">Easy</span>
+            </div>
+            <h3 class="recipe-title">Grilled Miso Eggplant</h3>
+            <div class="recipe-rating-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <span></span>
+            </div>
+            <p class="recipe-description">
+              Japanese eggplant halves cross-hatched and broiled with a caramelized white miso, mirin, and ginger glaze, finished with toasted sesame seeds and fresh scallions. Exceptional paired with warm genmaicha brown rice tea or dry sake.
+            </p>
+            <div class="recipe-pairing-tag">
+              <i class="fa-solid fa-wine-glass"></i> Pair with: Warm genmaicha brown rice tea or dry sake.
+            </div>
+            <div class="recipe-footer">
+              <button class="btn btn-primary btn-sm btn-view-recipe">View Recipe</button>
+              <span style="font-size: 0.85rem; font-weight: 700; color: var(--primary-olive);">280 kcal</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Recipe 14: Flourless Dark Chocolate Torte -->
+        <article class="recipe-card" data-category="desserts">
+          <div class="recipe-img-box">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=600&q=80" alt="Flourless Dark Chocolate Sea Salt Torte">
+            <button class="recipe-favorite-btn" aria-label="Save to Favorites"><i class="fa-regular fa-heart"></i></button>
+            <span class="recipe-dietary-badge">Gluten-Free</span>
+          </div>
+          <div class="recipe-content">
+            <div class="recipe-meta-row">
+              <span class="recipe-time"><i class="fa-solid fa-clock"></i> 45 Mins</span>
+              <span class="recipe-difficulty">Medium</span>
+            </div>
+            <h3 class="recipe-title">Dark Chocolate Torte</h3>
+            <div class="recipe-rating-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <span></span>
+            </div>
+            <p class="recipe-description">
+              A rich, velvety torte crafted with 72% single-origin dark chocolate, espresso powder, and pasture-raised eggs, finished with flaky Maldon sea salt and fresh raspberries. Pairs magnificently with a bold espresso or rich vintage port.
+            </p>
+            <div class="recipe-pairing-tag">
+              <i class="fa-solid fa-wine-glass"></i> Pair with: Bold double espresso or rich vintage port.
+            </div>
+            <div class="recipe-footer">
+              <button class="btn btn-primary btn-sm btn-view-recipe">View Recipe</button>
+              <span style="font-size: 0.85rem; font-weight: 700; color: var(--primary-olive);">340 kcal</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Recipe 15: Honey Roasted Fig Tart -->
+        <article class="recipe-card" data-category="desserts">
+          <div class="recipe-img-box">
+            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=80" alt="Rustic Honey Roasted Fig and Almond Tart">
+            <button class="recipe-favorite-btn" aria-label="Save to Favorites"><i class="fa-regular fa-heart"></i></button>
+            <span class="recipe-dietary-badge">Vegetarian</span>
+          </div>
+          <div class="recipe-content">
+            <div class="recipe-meta-row">
+              <span class="recipe-time"><i class="fa-solid fa-clock"></i> 40 Mins</span>
+              <span class="recipe-difficulty">Easy</span>
+            </div>
+            <h3 class="recipe-title">Honey Roasted Fig Tart</h3>
+            <div class="recipe-rating-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <span></span>
+            </div>
+            <p class="recipe-description">
+              Golden almond flour shortcrust filled with whipped orange blossom mascarpone, crowned with caramelized black mission figs, fresh thyme sprigs, and a drizzle of raw wildflower honey. Pairs with warm chamomile blossom tea or an iced espresso tonic.
+            </p>
+            <div class="recipe-pairing-tag">
+              <i class="fa-solid fa-wine-glass"></i> Pair with: Warm chamomile blossom tea or espresso tonic.
+            </div>
+            <div class="recipe-footer">
+              <button class="btn btn-primary btn-sm btn-view-recipe">View Recipe</button>
+              <span style="font-size: 0.85rem; font-weight: 700; color: var(--primary-olive);">310 kcal</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Recipe 16: Meyer Lemon Olive Oil Cake -->
+        <article class="recipe-card" data-category="desserts">
+          <div class="recipe-img-box">
+            <img src="https://images.unsplash.com/photo-1519869325930-281384150729?auto=format&fit=crop&w=600&q=80" alt="Meyer Lemon and Chia Seed Olive Oil Cake">
+            <button class="recipe-favorite-btn" aria-label="Save to Favorites"><i class="fa-regular fa-heart"></i></button>
+            <span class="recipe-dietary-badge">Dairy-Free Opt</span>
+          </div>
+          <div class="recipe-content">
+            <div class="recipe-meta-row">
+              <span class="recipe-time"><i class="fa-solid fa-clock"></i> 45 Mins</span>
+              <span class="recipe-difficulty">Easy</span>
+            </div>
+            <h3 class="recipe-title">Meyer Lemon Olive Oil Cake</h3>
+            <div class="recipe-rating-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <span></span>
+            </div>
+            <p class="recipe-description">
+              Exceptionally moist, aromatic crumb infused with bright Meyer lemon zest, California extra virgin olive oil, and nutty chia seeds, glazed with a tangy lemon glaze. Pairs heavenly with an Earl Grey tea latte or cold prosecco.
+            </p>
+            <div class="recipe-pairing-tag">
+              <i class="fa-solid fa-wine-glass"></i> Pair with: Earl Grey tea latte or chilled prosecco.
+            </div>
+            <div class="recipe-footer">
+              <button class="btn btn-primary btn-sm btn-view-recipe">View Recipe</button>
+              <span style="font-size: 0.85rem; font-weight: 700; color: var(--primary-olive);">290 kcal</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Recipe 17: Matcha Coconut Panna Cotta -->
+        <article class="recipe-card" data-category="desserts">
+          <div class="recipe-img-box">
+            <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=600&q=80" alt="Matcha Green Tea Coconut Panna Cotta">
+            <button class="recipe-favorite-btn" aria-label="Save to Favorites"><i class="fa-regular fa-heart"></i></button>
+            <span class="recipe-dietary-badge">Vegan &bull; No Sugar</span>
+          </div>
+          <div class="recipe-content">
+            <div class="recipe-meta-row">
+              <span class="recipe-time"><i class="fa-solid fa-clock"></i> 20 Mins</span>
+              <span class="recipe-difficulty">Easy</span>
+            </div>
+            <h3 class="recipe-title">Matcha Coconut Panna Cotta</h3>
+            <div class="recipe-rating-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+              <span></span>
+            </div>
+            <p class="recipe-description">
+              Silky smooth plant-based panna cotta made with ceremonial grade Uji matcha, rich organic coconut cream, and pure maple syrup, garnished with fresh blackberries and toasted coconut flakes. Pairs with chilled sencha green tea.
+            </p>
+            <div class="recipe-pairing-tag">
+              <i class="fa-solid fa-wine-glass"></i> Pair with: Chilled sencha green tea or sparkling water.
+            </div>
+            <div class="recipe-footer">
+              <button class="btn btn-primary btn-sm btn-view-recipe">View Recipe</button>
+              <span style="font-size: 0.85rem; font-weight: 700; color: var(--primary-olive);">240 kcal</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Recipe 18: Golden Turmeric Ginger Latte -->
+        <article class="recipe-card" data-category="beverages">
+          <div class="recipe-img-box">
+            <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=600&q=80" alt="Golden Turmeric Ginger Coconut Latte">
+            <button class="recipe-favorite-btn" aria-label="Save to Favorites"><i class="fa-regular fa-heart"></i></button>
+            <span class="recipe-dietary-badge">Vegan &bull; Anti-Inflammatory</span>
+          </div>
+          <div class="recipe-content">
+            <div class="recipe-meta-row">
+              <span class="recipe-time"><i class="fa-solid fa-clock"></i> 10 Mins</span>
+              <span class="recipe-difficulty">Easy</span>
+            </div>
+            <h3 class="recipe-title">Golden Turmeric Latte</h3>
+            <div class="recipe-rating-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <span></span>
+            </div>
+            <p class="recipe-description">
+              Warm, frothy organic coconut milk whisked with fresh grated turmeric root, ginger, Ceylon cinnamon, black pepper for absorption, and pure amber maple syrup. The ultimate soothing evening elixir to calm inflammation and induce restful sleep.
+            </p>
+            <div class="recipe-pairing-tag">
+              <i class="fa-solid fa-cookie"></i> Pair with: Dark chocolate almond butter cups.
+            </div>
+            <div class="recipe-footer">
+              <button class="btn btn-primary btn-sm btn-view-recipe">View Recipe</button>
+              <span style="font-size: 0.85rem; font-weight: 700; color: var(--primary-olive);">140 kcal</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Recipe 19: Blackberry Mint Kombucha Spritz -->
+        <article class="recipe-card" data-category="beverages">
+          <div class="recipe-img-box">
+            <img src="https://images.unsplash.com/photo-1556881286-fc6915169721?auto=format&fit=crop&w=600&q=80" alt="Sparkling Blackberry Mint Kombucha Spritz">
+            <button class="recipe-favorite-btn" aria-label="Save to Favorites"><i class="fa-regular fa-heart"></i></button>
+            <span class="recipe-dietary-badge">Probiotic &bull; Low-Sugar</span>
+          </div>
+          <div class="recipe-content">
+            <div class="recipe-meta-row">
+              <span class="recipe-time"><i class="fa-solid fa-clock"></i> 5 Mins</span>
+              <span class="recipe-difficulty">Easy</span>
+            </div>
+            <h3 class="recipe-title">Blackberry Kombucha Spritz</h3>
+            <div class="recipe-rating-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <span></span>
+            </div>
+            <p class="recipe-description">
+              Muddled ripe wild blackberries and fragrant spearmint leaves topped with raw artisan ginger kombucha, sparkling mineral water, and freshly squeezed lime juice over crushed ice. A delightfully fizzy, gut-nourishing mocktail for sunlit afternoons.
+            </p>
+            <div class="recipe-pairing-tag">
+              <i class="fa-solid fa-sun"></i> Pair with: Warm afternoons on the patio with grain bowls.
+            </div>
+            <div class="recipe-footer">
+              <button class="btn btn-primary btn-sm btn-view-recipe">View Recipe</button>
+              <span style="font-size: 0.85rem; font-weight: 700; color: var(--primary-olive);">65 kcal</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Recipe 20: Iced Hibiscus Rosewater Cold Brew -->
+        <article class="recipe-card" data-category="beverages">
+          <div class="recipe-img-box">
+            <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=600&q=80" alt="Iced Hibiscus Rosewater Cold Brew Tea">
+            <button class="recipe-favorite-btn" aria-label="Save to Favorites"><i class="fa-regular fa-heart"></i></button>
+            <span class="recipe-dietary-badge">Antioxidant-Rich</span>
+          </div>
+          <div class="recipe-content">
+            <div class="recipe-meta-row">
+              <span class="recipe-time"><i class="fa-solid fa-clock"></i> 10 Mins</span>
+              <span class="recipe-difficulty">Easy</span>
+            </div>
+            <h3 class="recipe-title">Hibiscus Rose Cold Brew</h3>
+            <div class="recipe-rating-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+              <span></span>
+            </div>
+            <p class="recipe-description">
+              Slow-steeped tart Egyptian hibiscus flowers blended with organic culinary rosewater, crushed dried orange peel, and fresh mint leaves served over crystal ice cubes. Vibrant ruby-red in color, highly refreshing, and naturally rich in vitamin C.
+            </p>
+            <div class="recipe-pairing-tag">
+              <i class="fa-solid fa-seedling"></i> Pair with: Fresh fruit platters and brunch pastries.
+            </div>
+            <div class="recipe-footer">
+              <button class="btn btn-primary btn-sm btn-view-recipe">View Recipe</button>
+              <span style="font-size: 0.85rem; font-weight: 700; color: var(--primary-olive);">25 kcal</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Recipe 21: Cardamom Pistachio Oat Shake -->
+        <article class="recipe-card" data-category="beverages">
+          <div class="recipe-img-box">
+            <img src="https://images.unsplash.com/photo-1553787499-6f9133860278?auto=format&fit=crop&w=600&q=80" alt="Cardamom Pistachio Oat Milk Shake">
+            <button class="recipe-favorite-btn" aria-label="Save to Favorites"><i class="fa-regular fa-heart"></i></button>
+            <span class="recipe-dietary-badge">Plant-Based</span>
+          </div>
+          <div class="recipe-content">
+            <div class="recipe-meta-row">
+              <span class="recipe-time"><i class="fa-solid fa-clock"></i> 5 Mins</span>
+              <span class="recipe-difficulty">Easy</span>
+            </div>
+            <h3 class="recipe-title">Cardamom Pistachio Shake</h3>
+            <div class="recipe-rating-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <span></span>
+            </div>
+            <p class="recipe-description">
+              Blended frozen bananas, rich organic oat milk, raw shelled pistachios, Medjool dates, and aromatic ground green cardamom pods, topped with crushed pistachio dust. A nourishing, ingredient-focused breakfast smoothie or wholesome post-workout indulgence.
+            </p>
+            <div class="recipe-pairing-tag">
+              <i class="fa-solid fa-dumbbell"></i> Pair with: Post-workout mornings or wholesome mid-day fuel.
+            </div>
+            <div class="recipe-footer">
+              <button class="btn btn-primary btn-sm btn-view-recipe">View Recipe</button>
+              <span style="font-size: 0.85rem; font-weight: 700; color: var(--primary-olive);">320 kcal</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Recipe Details Modal -->
+  <div class="modal-overlay" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <button class="modal-close-btn" aria-label="Close Recipe Modal"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-body modal-body-content">
+        <!-- Injected dynamically via script.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Info -->
+        <div class="footer-brand">
+          <h3><i class="fa-solid fa-utensils"></i> HarvestTable Kitchen</h3>
+          <p>
+            Dedicated to inspiring wholesome home cooking, celebrating fresh seasonal ingredients, and proving that ingredient-focused dining can be exceptionally flavorful and effortless.
+          </p>
+          <div class="footer-social-links">
+            <a href="#" class="social-icon-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Pinterest"><i class="fa-brands fa-pinterest"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <div class="footer-links">
+            <a href="index.html"><i class="fa-solid fa-chevron-right"></i> Home</a>
+            <a href="about.html"><i class="fa-solid fa-chevron-right"></i> About Our Test Kitchen</a>
+            <a href="recipes.html"><i class="fa-solid fa-chevron-right"></i> Recipe Catalog (21+ Items)</a>
+            <a href="testimonials.html"><i class="fa-solid fa-chevron-right"></i> Home Cook Reviews</a>
+            <a href="contact.html"><i class="fa-solid fa-chevron-right"></i> Contact &amp; Inquiries</a>
+            <a href="privacy-policy.html"><i class="fa-solid fa-chevron-right"></i> Privacy &amp; Terms</a>
+          </div>
+        </div>
+
+        <!-- Categories -->
+        <div class="footer-col">
+          <h4>Recipe Types</h4>
+          <div class="footer-links">
+            <a href="recipes.html"><i class="fa-solid fa-bowl-food"></i> Appetizers &amp; Starters</a>
+            <a href="recipes.html"><i class="fa-solid fa-leaf"></i> Nourishing Grain Bowls</a>
+            <a href="recipes.html"><i class="fa-solid fa-drumstick-bite"></i> Weeknight Dinners</a>
+            <a href="recipes.html"><i class="fa-solid fa-cookie-bite"></i> Artisan Desserts</a>
+            <a href="recipes.html"><i class="fa-solid fa-glass-water"></i> Beverages &amp; Elixirs</a>
+            <a href="recipes.html"><i class="fa-solid fa-fire"></i> High-Protein Dishes</a>
+          </div>
+        </div>
+
+        <!-- Studio Information -->
+        <div class="footer-col">
+          <h4>Test Kitchen Studio</h4>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>450 Culinary Arts Way, Suite 300<br>San Francisco, CA 94107</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-clock"></i>
+            <span>Mon–Fri: 9:00 AM – 5:00 PM PST</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <span>hello@harvesttablekitchen.example</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <span>(415) 555-0842 (Media &amp; Inquiries)</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 HarvestTable Kitchen Culinary Co. All rights reserved. Crafted with clean culinary passion.</p>
+        <p>
+          <a href="privacy-policy.html">Privacy Policy</a> &bull; 
+          <a href="contact.html">Recipe Permissions</a> &bull; 
+          <a href="about.html">Culinary Philosophy</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
